@@ -16,7 +16,7 @@
 <network-security-config>
 
     <!-- Allow http websites (matches 24 -> 27 targetSdk apps' behavior) -->
-    <base-config cleartextTrafficPermitted="true">
+    <base-config cleartextTrafficPermitted="false">
         <trust-anchors>
             <certificates src="system" />
         </trust-anchors>

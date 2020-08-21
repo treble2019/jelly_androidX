@@ -674,7 +674,6 @@ public class MainActivity extends WebViewExtActivity implements
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(color);
-        window.setNavigationBarColor(color);
         }
 
         int progressColor = hasValidColor
