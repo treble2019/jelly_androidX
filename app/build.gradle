@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "org.lineageos.jelly"
+        applicationId "org.lineage.jelly"
         minSdkVersion 26
         targetSdkVersion 28
         versionCode 1

@@ -22,8 +22,8 @@
         android:shortcutShortLabel="@string/shortcut_new_incognito_tab">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="org.lineageos.jelly.MainActivity"
-            android:targetPackage="org.lineageos.jelly">
+            android:targetClass="org.lineage.jelly.MainActivity"
+            android:targetPackage="org.lineage.jelly">
             <extra
                 android:name="extra_incognito"
                 android:value="true" />
@@ -39,8 +39,8 @@
         android:shortcutShortLabel="@string/shortcut_in_new_tab">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="org.lineageos.jelly"
-            android:targetClass="org.lineageos.jelly.MainActivity" />
+            android:targetPackage="org.lineage.jelly"
+            android:targetClass="org.lineage.jelly.MainActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -52,8 +52,8 @@
         android:shortcutShortLabel="@string/shortcut_favorites">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="org.lineageos.jelly"
-            android:targetClass="org.lineageos.jelly.favorite.FavoriteActivity" />
+            android:targetPackage="org.lineage.jelly"
+            android:targetClass="org.lineage.jelly.favorite.FavoriteActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 </shortcuts>

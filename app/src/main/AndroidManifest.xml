@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.jelly">
+    package="org.lineage.jelly">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -35,7 +35,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="org.lineageos.jelly.MainActivity"
+            android:name="org.lineage.jelly.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:documentLaunchMode="always"
             android:hardwareAccelerated="true"
@@ -76,7 +76,7 @@
         </activity>
 
         <activity
-            android:name="org.lineageos.jelly.LaunchFileActivity"
+            android:name="org.lineage.jelly.LaunchFileActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:documentLaunchMode="always"
             android:hardwareAccelerated="true"
@@ -115,23 +115,23 @@
         </activity>
 
         <activity
-            android:name="org.lineageos.jelly.history.HistoryActivity"
+            android:name="org.lineage.jelly.history.HistoryActivity"
             android:label="@string/history_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="org.lineageos.jelly.favorite.FavoriteActivity"
+            android:name="org.lineage.jelly.favorite.FavoriteActivity"
             android:label="@string/favorite_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="org.lineageos.jelly.SettingsActivity"
+            android:name="org.lineage.jelly.SettingsActivity"
             android:label="@string/settings_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="org.lineageos.jelly.fileprovider"
+            android:authorities="org.lineage.jelly.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -141,12 +141,12 @@
 
         <provider
             android:name=".favorite.FavoriteProvider"
-            android:authorities="org.lineageos.jelly.favorite"
+            android:authorities="org.lineage.jelly.favorite"
             android:exported="false" />
 
         <provider
             android:name=".history.HistoryProvider"
-            android:authorities="org.lineageos.jelly.history"
+            android:authorities="org.lineage.jelly.history"
             android:exported="false" />
 
         <meta-data
@@ -154,7 +154,7 @@
             android:value="true" />
 
         <service
-            android:name="org.lineageos.jelly.tiles.IncognitoTile"
+            android:name="org.lineage.jelly.tiles.IncognitoTile"
             android:enabled="true"
             android:icon="@drawable/ic_incognito"
             android:label="@string/menu_incognito"
@@ -164,7 +164,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="org.lineageos.jelly.tiles.NewTabTile"
+            android:name="org.lineage.jelly.tiles.NewTabTile"
             android:enabled="true"
             android:icon="@drawable/ic_new_tab"
             android:label="@string/menu_in_new_tab"
@@ -174,7 +174,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="org.lineageos.jelly.tiles.FavoritesTile"
+            android:name="org.lineage.jelly.tiles.FavoritesTile"
             android:enabled="true"
             android:icon="@drawable/ic_favorite"
             android:label="@string/menu_favorites"
